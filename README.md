@@ -1,13 +1,15 @@
-
-Student Examination Agent (pipeline-free)
----------------------------------------
-This version avoids Hugging Face `transformers.pipeline` to prevent protobuf/numpy conflicts.
-It uses:
-- sentence-transformers (all-MiniLM-L6-v2) for embeddings
-- FAISS for similarity search
-- Sumy (LexRank) for extractive summarization
-- Whisper for transcription (speech-to-text)
-- pyttsx3 for text-to-speech (offline)
+🎤 Student Examination Agent
+  The Student Examination Agent is an AI-powered chatbot that helps students interact with their study material using voice commands.
+  Upload a PDF 📄
+  The agent greets you with “How can I assist you?” 🎤
+  Ask questions via voice only
+  The agent provides answers and speaks them back 🔊
+🚀 Features
+  📘 Upload PDF files (course notes, exam material, etc.)
+  🎤 Voice input (Speech-to-Text)
+  🔊 Voice output (Text-to-Speech)
+  🤖 AI-powered Q&A using TF-IDF + cosine similarity
+  🖥️ Streamlit-based simple web app
 
 Quick start:
 1. Create and activate a Python virtual environment (recommended)
@@ -23,6 +25,4 @@ Quick start:
 3. Run Streamlit app:
    streamlit run app.py
 
-Notes:
-- Whisper model download can be large. Use smaller model names like 'base' as default.
-- If you run into numpy/protobuf conflicts from other global packages, use a clean virtualenv.
+
