@@ -1,0 +1,8 @@
+streamlit
+pymupdf
+sumy
+scikit-learn
+openai-whisper
+pyttsx3
+SpeechRecognition
+nltk
